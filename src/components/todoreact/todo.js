@@ -81,7 +81,7 @@ const Todo = () => {
 
           {/* AddItems */}
           <div className="addItems">
-            <input type='text' className='form-control' placeholder='✍️Add Items'
+            <input type='text' className='form-control' placeholder='✍️ Add Items'
               value={inputdata}
               onChange={(event) => setInputData(event.target.value)}
             />
@@ -97,7 +97,7 @@ const Todo = () => {
           <div className="showItems">
             {items.map((props, index) => {
               return (
-                <div className="eachItem">
+                <div className="eachItem" key={props.id}>
                   <h3>{props.name}</h3>
                   <div className="todo-btn" key={props.id}>
                     <i className="far fa-edit add-btn" onClick={() => editItem(props.id)}></i>
@@ -112,7 +112,7 @@ const Todo = () => {
           <div className="showItems">
             <button className='btn effect04' data-sm-link-text="Remove all"
               onClick={removeAll}>
-              <span>Check List</span>
+              <span className='button-span'>Check List</span>
             </button>
           </div>
         </div>

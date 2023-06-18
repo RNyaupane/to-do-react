@@ -21,7 +21,7 @@ html {
 }
 
 .child-div {
-  background: #01906c;
+  background: #00112c;
   text-align: center;
   width: auto;
   padding: 50px;
@@ -121,7 +121,7 @@ input:focus {
   margin-left: 1rem;
   min-width: 40rem;
   word-break: break-word;
-  background: rgb(4, 217, 192);
+  background: rgb(1, 135, 119);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -174,7 +174,10 @@ input:focus {
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
-
+.form-control{
+  font-weight: bold;
+  color: #000000;
+}
 .btn {
   letter-spacing: 0.1em;
   cursor: pointer;
@@ -189,6 +192,7 @@ input:focus {
 }
 .btn:hover {
   text-decoration: none;
+
 }
 
 .effect04 {
@@ -207,9 +211,13 @@ input:focus {
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   transition-duration: 0.4s;
 }
-
+.button-span{
+  font-size: 2rem;
+  font-weight: bold;
+}
 .effect04:hover {
-  background-color: # 060822;
+  background-color: #040723;
+  font-weight: 800;
 }
 
 .effect04:hover span {
